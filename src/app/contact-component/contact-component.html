@@ -1,0 +1,49 @@
+<div class="contact-page">
+  <h1 class="contact-title">Kontakt</h1>
+
+  <div class="contact-list">
+    <div class="contact-item">
+      <mat-icon>email</mat-icon>
+      <div class="contact-text">
+        <h2>E-mail</h2>
+        <p>{{email}}</p>
+      </div>
+    </div>
+
+    <div class="contact-item">
+      <mat-icon>phone</mat-icon>
+      <div class="contact-text">
+        <h2>Telefon</h2>
+        <p>{{phoneNumber}}</p>
+      </div>
+    </div>
+
+    <div class="contact-item">
+      <mat-icon>location_on</mat-icon>
+      <div class="contact-text">
+        <h2>Adres</h2>
+        <p>{{address}}</p>
+      </div>
+    </div>
+
+    <div class="contact-item">
+      <img class="img-icon" src="instagram.png" alt="Instagram">
+      <div class="contact-text">
+        <h2>Instagram</h2>
+        <a href="https://www.instagram.com/nat.logo?igsh=MXh1b2g1d3BiNDgxYw==">
+          {{social}}
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="map-container">
+    <google-map
+      height="400px"
+      width="100%"
+      [center]="center"
+      [zoom]="zoom">
+      <map-marker [position]="markers"></map-marker>
+    </google-map>
+  </div>
+</div>

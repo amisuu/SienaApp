@@ -1,0 +1,17 @@
+<div class="home-page">
+  <div class="home-header">
+    <img src="front-image.png" alt="Logo" class="home-logo" />
+    <div class="home-text">
+      <h1 class="home-title">Witaj na mojej stronie!</h1>
+      <p class="home-subtitle" 
+         [innerHTML]="nonBreakingSpace">
+      </p>
+      <div class="home-content">
+        <p class="contact-description">Chętnie odpowiem na Twoje pytania</p>
+        <button class="contact-btn" [routerLink]="['contact']">
+          Skontaktuj się ze mną
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

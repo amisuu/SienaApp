@@ -1,0 +1,16 @@
+header {
+  background-color: #fff;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  padding: 16px 0 0 0;
+  text-align: center;
+}

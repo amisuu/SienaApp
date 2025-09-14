@@ -1,0 +1,88 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  min-height: 100vh;
+
+  .content-section {
+    width: 90%;
+    font-size: 1rem;
+    line-height: 1.8;
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+      color: var(--text-header);
+    }
+
+    .content-wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .selfie-section {
+      flex: 0 0 250px;
+
+      img {
+        height: auto;
+        border-radius: 8px;
+        display: block;
+        margin-top: 18px;
+      }
+    }
+
+    .text-section {
+      flex: 1;
+      text-align: justify;
+
+      p {
+        white-space: pre-wrap;
+      }
+    }
+  }
+
+  .trainings-section {
+    margin-top: 2rem;
+    padding-top: 1rem;
+
+    h3 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--text-header);
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+      line-height: 1.6;
+      font-size: 1rem;
+      color: var(--text-dark)
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .content-section {
+      width: 90%;
+      font-size: 0.95rem;
+
+      .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .text-section {
+        text-align: justify;
+      }
+    }
+  }
+}

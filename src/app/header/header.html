@@ -1,0 +1,21 @@
+<div class="container">
+  <nav class="desktop-menu">
+    <a [routerLink]="['']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Start</a>
+    <a [routerLink]="['about']" routerLinkActive="active">O mnie</a>
+    <a [routerLink]="['offer']" routerLinkActive="active">Oferta</a>
+    <a [routerLink]="['contact']" routerLinkActive="active">Kontakt</a>
+  </nav>
+
+  <button class="toggleMenu" (click)="menuClicked()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</div>
+
+<nav class="mobile-menu" [class.open]="isMenuOpen">
+  <a [routerLink]="['']" (click)="menuClicked()" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Start</a>
+  <a [routerLink]="['about']" (click)="menuClicked()" routerLinkActive="active">O mnie</a>
+  <a [routerLink]="['offer']" (click)="menuClicked()" routerLinkActive="active">Oferta</a>
+  <a [routerLink]="['contact']" (click)="menuClicked()" routerLinkActive="active">Kontakt</a>
+</nav>
