@@ -38,6 +38,10 @@ testem.log
 /typings
 package-lock.json
 package.json
+angular.json
+tsconfig.app.json
+tsconfig.json
+tsconfig.spec.json
 
 # System files
 .DS_Store
