@@ -42,6 +42,9 @@
             "styles": [
               "src/custom-theme.scss",
               "src/styles.scss"
+            ],
+            "scripts": [
+              "src/public/env.js"
             ]
           },
           "configurations": {
