@@ -44,7 +44,7 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "src/public/env.js"
+              "public/env.js"
             ]
           },
           "configurations": {
