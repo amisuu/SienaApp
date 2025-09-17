@@ -14,7 +14,7 @@ export class App implements OnInit {
 
   private loadGoogleMapsScript() {
     const script = document.createElement('script');
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${environment.googleMaps}&libraries=places&language=pl`;
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${environment.GoogleMapsApiKey}&libraries=places&language=pl`;
     script.async = true;
     script.defer = true;
     script.onload = () => {
