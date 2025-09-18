@@ -70,13 +70,6 @@
       .home-text {
         max-width: 100%;
         text-align: left;
-
-        .home-subtitle {
-          hyphens: auto;
-          --webkit-hyphens: auto;
-          --ms-hyphens: auto;
-          word-break: break-word;
-        }
       }
 
       .home-logo {

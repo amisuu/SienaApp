@@ -93,10 +93,6 @@
 
       .text-section p {
         text-align: left;
-        hyphens: auto;
-        --webkit-hyphens: auto;
-        --ms-hyphens: auto;
-        word-break: break-word;
         line-height: 1.5;
       }
     }
