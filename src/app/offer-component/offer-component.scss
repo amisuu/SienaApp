@@ -36,8 +36,8 @@
 }
 
   .description-section {
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 19px;
+    line-height: 1.5;
 
     h3 {
       font-size: 1.4rem;
@@ -49,7 +49,7 @@
     p {
       margin-bottom: 1rem;
       text-align: justify;
-      line-height: 1.4;
+      line-height: 1.5;
     }
 
     ul {
@@ -93,10 +93,12 @@
     }
 
     .description-section p {
+      text-align: left;
       hyphens: auto;
       --webkit-hyphens: auto;
       --ms-hyphens: auto;
       word-break: break-word;
+      font-size: 19px;
     }
   }
 }
