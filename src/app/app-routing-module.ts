@@ -4,7 +4,6 @@ import { AboutComponent } from './about-component/about-component';
 import { ContactComponent } from './contact-component/contact-component';
 import { OfferComponent } from './offer-component/offer-component';
 import { HomeComponent } from './home-component/home-component';
-import { RegulationComponent } from './regulation-component/regulation-component';
 
 const routes: Routes = [
   {

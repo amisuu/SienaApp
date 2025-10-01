@@ -8,9 +8,7 @@ import { Footer } from './footer/footer';
 import { SharedModule } from './shared/shared.module';
 import { OfferComponent } from './offer-component/offer-component';
 import { ContactComponent } from './contact-component/contact-component';
-import { AboutComponent } from './about-component/about-component';
 import { HomeComponent } from './home-component/home-component';
-import { RegulationComponent } from './regulation-component/regulation-component';
 
 @NgModule({
   declarations: [
@@ -19,14 +17,12 @@ import { RegulationComponent } from './regulation-component/regulation-component
     Footer,
     OfferComponent,
     ContactComponent,
-    AboutComponent,
     HomeComponent,
-    RegulationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
   ],
   providers: [
     provideBrowserGlobalErrorListeners()

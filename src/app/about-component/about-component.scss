@@ -42,6 +42,47 @@
         white-space: pre-wrap;
       }
     }
+
+    .gallery-label {
+      margin-top: 60px;
+    }
+
+    #opinionsGallery {
+      display: block;
+      margin: 10px auto;
+      width: 60%;
+      height: 250px;
+      border-radius: 8px;
+
+      ::ng-deep .g-slider, 
+      ::ng-deep .g-image-item {
+        background-color: var(--background-primary) !important;
+      }
+
+      ::ng-deep img{
+        object-fit: none !important;
+        width: 100% !important;
+        height: 100% !important;
+      }
+    }
+
+    .gallery-link {
+      text-align: center;
+      margin-top: 10px;
+
+      a {
+        font-size: 24px;
+        font-weight: 500;
+        color: var(--accent);
+        text-decoration: none;
+        transition: color 0.3s;
+
+        &:hover {
+          color: var(--accent-hover);
+          text-decoration: underline;
+        }
+      }
+    }
   }
 
   .trainings-section {
@@ -94,6 +135,42 @@
       .text-section p {
         text-align: left;
         line-height: 1.5;
+      }
+
+      .gallery-label {
+        margin-top: 60px;
+
+        h2 {
+          font-size: 20px;
+        }
+      }
+
+      #opinionsGallery {
+        height: 200px;
+        width: 95%;
+        position: relative;
+
+        ::ng-deep img {
+          object-fit: contain !important;
+        }
+      }
+
+      .gallery-link {
+        text-align: center;
+        margin-top: 10px;
+
+        a {
+          font-size: 20px;
+          font-weight: 500;
+          color: var(--accent);
+          text-decoration: none;
+          transition: color 0.3s;
+
+          &:hover {
+            color: var(--accent-hover);
+            text-decoration: underline;
+          }
+        }
       }
     }
   }

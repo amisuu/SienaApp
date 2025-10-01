@@ -1,7 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-// Angular Material modules
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { RouterModule } from '@angular/router';
@@ -9,6 +7,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { MatTableModule } from '@angular/material/table';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { GalleryModule, GALLERY_CONFIG } from 'ng-gallery';
 
 @NgModule({
   imports: [
@@ -16,7 +16,9 @@ import { MatTableModule } from '@angular/material/table';
     MatMenuModule,
     MatButtonModule,
     RouterModule,
-    MatIconModule
+    MatIconModule,
+    BrowserAnimationsModule,
+    GalleryModule,
   ],
   exports: [
     CommonModule,
@@ -26,7 +28,17 @@ import { MatTableModule } from '@angular/material/table';
     MatIconModule,
     MatCardModule,
     GoogleMapsModule,
-    MatTableModule
+    MatTableModule,
+    GalleryModule,
+  ],
+  providers: [
+    {
+      provide: GALLERY_CONFIG,
+      useValue: {
+        thumbPosition: 'bottom',
+        imageSize: 'cover',
+      }
+    }
   ]
 })
 export class SharedModule {}
